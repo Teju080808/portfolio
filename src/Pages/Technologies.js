@@ -2,40 +2,44 @@ import React from "react";
 import { techStackDetails } from "../Details";
 
 function Technologies() {
-  const {
-    html,
-    css,
-    js,
-    react,
-    bootstrap,
-    vscode,
-    github,
-  } = techStackDetails;
+  const { html, css, js, react, bootstrap, vscode, github } = techStackDetails;
+
   return (
-    <main className="container mx-auto max-width pt-10 pb-20 ">
-      <section>
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
-          Tech Stack
-        </h1>
-        <p className="text-content py-2 lg:max-w-3xl">
+    <main className="bg-dark text-white">
+      <section className="max-w-3xl mx-auto mb-12 text-center p-3" >
+        <h1 className="font-bold mb-4">Tech Stack</h1>
+        <p className="text-gray-300">
           Technologies I've been working with recently
         </p>
       </section>
-      <section className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center gap-10 pt-6">
-        <img src={html} title="html" alt="" />
-        <img src={css} title="CSS" alt="" />
-        <img src={js} title="JavaScript" alt="" />
-        <img src={react} title="React" alt="" />
-        <img src={bootstrap} title="Bootstrap" alt="" />
+
+      <section className="p-5" style={{display:"flex",justifyContent:"center",gap:"50px"}}>
+        {[html, css, js, react, bootstrap].map((tech, idx) => (
+          <img
+            key={idx}
+            src={tech}
+            alt=""
+            title=""
+            className="w-20 h-20 object-contain hover:scale-110 transition-transform"
+          />
+        ))}
       </section>
-      <section>
-        <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
-          Tools
-        </h1>
+
+      <section className="max-w-3xl mx-auto mb-6 text-center">
+        <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-4">Tools</h1>
       </section>
-      <section className="grid grid-cols-4 md:grid-cols-5 lg:grid-cols-6 items-center gap-10 pt-6">
-        <img src={vscode} title="Visual Studio Code" alt="" />
-        <img src={github} title="Github" alt="Github" />
+
+      {/* Tools Images - aju bajju */}
+      <section className="p-5" style={{display:"flex",justifyContent:"center", gap:"50px"}}>
+        {[vscode, github].map((tool, idx) => (
+          <img
+            key={idx}
+            src={tool}
+            alt=""
+            title=""
+            className="w-20 h-20 object-contain hover:scale-110 transition-transform"
+          />
+        ))}
       </section>
     </main>
   );

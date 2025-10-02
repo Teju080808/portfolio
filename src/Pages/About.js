@@ -4,26 +4,28 @@ import { personalDetails, eduDetails } from "../Details";
 
 function About() {
   return (
-    <main className="container mx-auto max-width pt-10 pb-20 ">
-      <section>
-        <h1 className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+    <main className="bg-dark text-white min-h-screen py-12 p-3">
+      <section className="max-w-3xl mx-auto p-5">
+        <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-6 text-center">
           About Me
         </h1>
-        <p className="text-content py-8 lg:max-w-3xl">{personalDetails.about}</p>
+        <p className="text-gray-300 leading-relaxed">{personalDetails.about}</p>
       </section>
-      <section>
-        <h1 className="text-2xl pt-10 text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold">
+
+      <section className="max-w-3xl mx-auto p-3">
+        <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-6 text-center">
           Education
         </h1>
-        {React.Children.toArray(
-          eduDetails.map(({ Position, Company, Location }) => (
+        <div className="space-y-6">
+          {eduDetails.map(({ Position, Company, Location }, index) => (
             <Work
+              key={index}
               position={Position}
               company={Company}
               location={Location}
             />
-          ))
-        )}
+          ))}
+        </div>
       </section>
     </main>
   );

@@ -1,19 +1,22 @@
 import React from "react";
+import "../index.css"; // CSS ka correct path (src/index.css)
+
 function Footer() {
   return (
-    <footer className="container mx-auto py-1 fixed bottom-0 md:left-20 bg-white dark:bg-dark-mode">
-      <p className="text-xs text-center text-dark-content dark:text-light-content w-full">
+    <footer className="footer bg-dark">
+      <p className="text-xs text-center text-dark-content w-full">
         Designed and Coded by{" "}
         <a
-         className="text-gradient font-medium"
+          className="text-gradient"
           href="https://pavanmg.in"
           target="_blank"
           rel="noreferrer noopener"
         >
-          Tejal Purabiya   
+          Tejal Purabiya
         </a>
       </p>
     </footer>
   );
 }
+
 export default Footer;

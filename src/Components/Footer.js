@@ -4,7 +4,7 @@ import "../index.css"; // CSS ka correct path (src/index.css)
 function Footer() {
   return (
     <footer className="footer bg-dark">
-      <p className="text-xs text-center text-dark-content w-full">
+      <p className="text-xs text-center text-dark-content p-2 w-full">
         Designed and Coded by{" "}
         <a
           className="text-gradient"

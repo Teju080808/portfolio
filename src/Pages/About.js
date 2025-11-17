@@ -4,8 +4,8 @@ import { personalDetails, eduDetails } from "../Details";
 
 function About() {
   return (
-    <main className="bg-dark text-white min-h-screen py-12 p-3">
-      <section className="max-w-3xl mx-auto p-5">
+    <main className="bg-dark text-white min-h-screen " style={{height:"600px"}}>
+      <section className="max-w-3xl mx-auto">
         <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-6 text-center">
           About Me
         </h1>
@@ -13,10 +13,10 @@ function About() {
       </section>
 
       <section className="max-w-3xl mx-auto p-3">
-        <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-6 text-center">
+        <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold mb-6 text-center ">
           Education
         </h1>
-        <div className="space-y-6">
+        <div className="space-y-6 p-5">
           {eduDetails.map(({ Position, Company, Location }, index) => (
             <Work
               key={index}

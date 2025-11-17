@@ -5,8 +5,8 @@ import { projectDetails } from "../Details";
 function Projects() {
   return (
     <main className="bg-dark ">
-      <section className="projects-section ">
-        <h1 className="font-bold text-white text-center p-3">
+      <section className="projects-section">
+        <h1 className="font-bold text-white text-center pb-3">
           Projects
         </h1>
         <div className="container" style={{display:"flex",justifyContent:"center",gap:"30px"}}>

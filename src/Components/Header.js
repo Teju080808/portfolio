@@ -12,12 +12,12 @@ function Header() {
   const toggleClass = () => setIsOpen(!isOpen);
 
   return (
-    <header className="header header-md-flex bg-dark">
+    <header className="header header-md-flex bg-dark pt-3">
       <div className="flex justify-between items-center">
       </div>
 
       <nav className={`nav ${!isOpen ? "hidden" : ""} md-flex`}>
-        <ul>
+        <ul style={{listStyle:"none",padding:"0",margin:"0"}}>
           <li><NavLink to="/" className="nav-link text-light" onClick={toggleClass}>Home</NavLink></li>
           <li><NavLink to="/about" className="nav-link text-light" onClick={toggleClass}>About</NavLink></li>
           <li><NavLink to="/technologies" className="nav-link text-light" onClick={toggleClass}>Technologies</NavLink></li>

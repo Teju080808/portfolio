@@ -11,6 +11,7 @@ import vscode from "./assets/techstack/vscode.png";
 import github from "./assets/techstack/github.png";
 // Project Images
 import projectImage1 from "./assets/projects/project1.jpg";
+import projectImage2 from "./assets/projects/project2.jpg";
 
 // Enter your Personal Details here
 export const personalDetails = {
@@ -61,7 +62,7 @@ export const projectDetails = [
   },
   {
     title: "Urban Nector",
-    image: projectImage1,
+    image: projectImage2,
     description: "This is a simple and clean food website where users can explore different dishes. The design is easy to use and focuses on good food presentation.",
     techstack: "HTML, CSS, JavaScript,React.js",
     previewLink: "https://urban-nector-161268.netlify.app/",

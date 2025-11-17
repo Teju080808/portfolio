@@ -63,7 +63,7 @@ export const projectDetails = [
     title: "Urban Nector",
     image: projectImage1,
     description: "This is a simple and clean food website where users can explore different dishes. The design is easy to use and focuses on good food presentation.",
-    techstack: "HTML, CSS, JavaScript",
+    techstack: "HTML, CSS, JavaScript,React.js",
     previewLink: "https://urban-nector-161268.netlify.app/",
     githubLink: "https://github.com/Teju080808/UrbanNecter",
   }
